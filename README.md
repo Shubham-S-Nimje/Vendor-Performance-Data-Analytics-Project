@@ -73,9 +73,3 @@ In the retail and wholesale sector, **ineffective inventory and sales management
    ```
 
 ---
-
-## 📌 Resume Highlight (for use in your resume)
-
-> **Vendor Performance Data Analytics** – Conducted in-depth analysis of retail vendor data to optimize sales strategy, improve inventory turnover, and enhance profitability by identifying key contributors and loss-making segments.
-
----

@@ -86,10 +86,10 @@ def clean_data(df):
     df['Description'] = df['Description'].str.strip()
 
     # creating new columns for better analysis
-    vendor_sales_summary['GrossProfit'] = vendor_sales_summary ['TotalSalesDollars'] - vendor_sales_summary ['TotalPurchaseDollars']
-    vendor_sales_summary['ProfitMargin']= (vendor_sales_summary['GrossProfit']/ vendor_sales_summary['TotalSalesDollars'])*100
-    vendor_sales_summary['StockTurnover'] = vendor_sales_summary['TotalSalesQuantity'] / vendor_sales_summary ['TotalPurchaseQuantity']
-    vendor_sales_summary ['SalesToPurchaseRatio'] = vendor_sales_summary ['TotalSalesDollars'] / vendor_sales_summary ['TotalPurchaseDollars']
+    df['GrossProfit'] = df ['TotalSalesDollars'] - df ['TotalPurchaseDollars']
+    df['ProfitMargin']= (df['GrossProfit']/ df['TotalSalesDollars'])*100
+    df['StockTurnover'] = df['TotalSalesQuantity'] / df ['TotalPurchaseQuantity']
+    df ['SalesToPurchaseRatio'] = df ['TotalSalesDollars'] / df ['TotalPurchaseDollars']
     
     return df
 

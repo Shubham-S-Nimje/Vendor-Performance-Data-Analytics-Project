@@ -90,3 +90,23 @@
 4               0.00             0.00            0.00       367.52  
 2025-07-07 15:22:46,379 - INFO - Ingesting data ..... 
 2025-07-07 15:22:46,566 - INFO - Completed
+2025-07-07 16:02:49,719 - INFO - Creating Vendor Summary Table ..... 
+2025-07-07 16:04:32,144 - INFO -    VendorNumber                               VendorName  ...  TotalExciseTax FreightCost
+0             2  IRA GOLDMAN AND WILLIAMS, LLP            ...            2.00       27.08
+1             2  IRA GOLDMAN AND WILLIAMS, LLP            ...            0.52       27.08
+2            54              AAPER ALCOHOL & CHEMICAL CO  ...             NaN        0.48
+3            60              ADAMBA IMPORTS INTL INC      ...           37.01      367.52
+4            60              ADAMBA IMPORTS INTL INC      ...             NaN      367.52
+
+[5 rows x 14 columns]
+2025-07-07 16:04:32,907 - INFO - Cleaning Data ..... 
+2025-07-07 16:04:32,934 - INFO -    VendorNumber                     VendorName  Brand  ... ProfitMargin  StockTurnover  SalesToPurchaseRatio
+0             2  IRA GOLDMAN AND WILLIAMS, LLP  90085  ...    71.331591       2.250000              3.488160
+1             2  IRA GOLDMAN AND WILLIAMS, LLP  90609  ...  -807.029478       0.075000              0.110250
+2            54    AAPER ALCOHOL & CHEMICAL CO    990  ...         -inf       0.000000              0.000000
+3            60        ADAMBA IMPORTS INTL INC    771  ...    36.672675       1.205128              1.579097
+4            60        ADAMBA IMPORTS INTL INC   3401  ...         -inf       0.000000              0.000000
+
+[5 rows x 18 columns]
+2025-07-07 16:04:32,979 - INFO - Ingesting data ..... 
+2025-07-07 16:04:33,151 - INFO - Completed
