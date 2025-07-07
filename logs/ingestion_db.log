@@ -1,0 +1,92 @@
+2025-07-02 18:29:46,793 - INFO - Ingesting begin_inventory.csv in db
+2025-07-02 18:30:16,880 - INFO - --------------Ingestion Complete---------------
+2025-07-02 18:30:16,881 - INFO - Total Time Taken: 0.5105975866317749 minutes
+2025-07-02 18:30:17,274 - INFO - Ingesting end_inventory.csv in db
+2025-07-02 18:30:51,841 - INFO - --------------Ingestion Complete---------------
+2025-07-02 18:30:51,841 - INFO - Total Time Taken: 1.0932781259218851 minutes
+2025-07-02 18:31:00,291 - INFO - Ingesting purchases.csv in db
+2025-07-02 18:41:40,324 - INFO - --------------Ingestion Complete---------------
+2025-07-02 18:41:40,324 - INFO - Total Time Taken: 11.901324923833211 minutes
+2025-07-02 18:41:40,510 - INFO - Ingesting purchase_prices.csv in db
+2025-07-02 18:41:42,259 - INFO - --------------Ingestion Complete---------------
+2025-07-02 18:41:42,260 - INFO - Total Time Taken: 11.93358945051829 minutes
+2025-07-02 18:42:12,452 - INFO - Ingesting sales.csv in db
+2025-07-03 16:33:29,630 - INFO - Ingesting begin_inventory.csv in db
+2025-07-03 16:33:41,748 - INFO - Ingesting begin_inventory.csv in db
+2025-07-03 16:33:55,439 - INFO - Ingesting begin_inventory.csv in db
+2025-07-03 16:34:18,357 - INFO - --------------Ingestion Complete---------------
+2025-07-03 16:34:18,357 - INFO - Total Time Taken: 0.3867828011512756 minutes
+2025-07-03 16:34:18,701 - INFO - Ingesting end_inventory.csv in db
+2025-07-03 16:34:28,944 - INFO - Ingesting begin_inventory.csv in db
+2025-07-03 16:34:46,377 - INFO - --------------Ingestion Complete---------------
+2025-07-03 16:34:46,377 - INFO - Total Time Taken: 0.8537859598795573 minutes
+2025-07-03 16:34:52,212 - INFO - Ingesting purchases.csv in db
+2025-07-03 16:43:03,782 - INFO - --------------Ingestion Complete---------------
+2025-07-03 16:43:03,782 - INFO - Total Time Taken: 9.143861111005148 minutes
+2025-07-03 16:43:03,966 - INFO - Ingesting purchase_prices.csv in db
+2025-07-03 16:43:05,491 - INFO - --------------Ingestion Complete---------------
+2025-07-03 16:43:05,491 - INFO - Total Time Taken: 9.172355552514395 minutes
+2025-07-03 16:43:30,252 - INFO - Ingesting sales.csv in db
+2025-07-03 17:29:17,633 - INFO - --------------Ingestion Complete---------------
+2025-07-03 17:29:17,639 - INFO - Total Time Taken: 55.374619686603545 minutes
+2025-07-03 17:29:19,462 - INFO - Ingesting vendor_invoice.csv in db
+2025-07-03 17:29:20,560 - INFO - --------------Ingestion Complete---------------
+2025-07-03 17:29:20,560 - INFO - Total Time Taken: 55.42350306113561 minutes
+2025-07-07 15:20:56,166 - INFO - Creating Vendor Summary Table ..... 
+2025-07-07 15:22:46,280 - INFO -    VendorNumber                               VendorName  Brand  \
+0             2  IRA GOLDMAN AND WILLIAMS, LLP            90085   
+1             2  IRA GOLDMAN AND WILLIAMS, LLP            90609   
+2            54              AAPER ALCOHOL & CHEMICAL CO    990   
+3            60              ADAMBA IMPORTS INTL INC        771   
+4            60              ADAMBA IMPORTS INTL INC       3401   
+
+                    Description  PurchasePrice  ActualPrice Volume  \
+0  Ch Lilian 09 Ladouys St Este          23.86        36.99    750   
+1  Flavor Essence Variety 5 Pak          17.00        24.99  162.5   
+2       Ethyl Alcohol 200 Proof         105.07       134.49   3750   
+3   Bak's Krupnik Honey Liqueur          11.44        14.99    750   
+4                  Vesica Vodka          11.10        14.99   1750   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0                      8                190.88                18.0   
+1                    320               5440.00                24.0   
+2                      1                105.07                 NaN   
+3                     39                446.16                47.0   
+4                      6                 66.60                 NaN   
+
+   TotalSalesDollars  TotalSalesPrice  TotalExciseTax  FreightCost  
+0             665.82           295.92            2.00        27.08  
+1             599.76           449.82            0.52        27.08  
+2                NaN              NaN             NaN         0.48  
+3             704.53           494.67           37.01       367.52  
+4                NaN              NaN             NaN       367.52  
+2025-07-07 15:22:46,314 - INFO - Cleaning Data ..... 
+2025-07-07 15:22:46,369 - INFO -    VendorNumber                     VendorName  Brand  \
+0             2  IRA GOLDMAN AND WILLIAMS, LLP  90085   
+1             2  IRA GOLDMAN AND WILLIAMS, LLP  90609   
+2            54    AAPER ALCOHOL & CHEMICAL CO    990   
+3            60        ADAMBA IMPORTS INTL INC    771   
+4            60        ADAMBA IMPORTS INTL INC   3401   
+
+                    Description  PurchasePrice  ActualPrice  Volume  \
+0  Ch Lilian 09 Ladouys St Este          23.86        36.99   750.0   
+1  Flavor Essence Variety 5 Pak          17.00        24.99   162.5   
+2       Ethyl Alcohol 200 Proof         105.07       134.49  3750.0   
+3   Bak's Krupnik Honey Liqueur          11.44        14.99   750.0   
+4                  Vesica Vodka          11.10        14.99  1750.0   
+
+   TotalPurchaseQuantity  TotalPurchaseDollars  TotalSalesQuantity  \
+0                      8                190.88                18.0   
+1                    320               5440.00                24.0   
+2                      1                105.07                 0.0   
+3                     39                446.16                47.0   
+4                      6                 66.60                 0.0   
+
+   TotalSalesDollars  TotalSalesPrice  TotalExciseTax  FreightCost  
+0             665.82           295.92            2.00        27.08  
+1             599.76           449.82            0.52        27.08  
+2               0.00             0.00            0.00         0.48  
+3             704.53           494.67           37.01       367.52  
+4               0.00             0.00            0.00       367.52  
+2025-07-07 15:22:46,379 - INFO - Ingesting data ..... 
+2025-07-07 15:22:46,566 - INFO - Completed

@@ -57,13 +57,13 @@ In the retail and wholesale sector, **ineffective inventory and sales management
 1. Clone this repository
 
    ```bash
-   git clone https://github.com/yourusername/vendor-performance-analytics.git
+   git clone https://github.com/Shubham-S-Nimje/Vendor-Performance-Data-Analytics-Project.git
    ```
 
 2. Navigate to the project directory
 
    ```bash
-   cd vendor-performance-analytics
+   cd Vendor-Performance-Data-Analytics-Project
    ```
 
 3. Open the Jupyter Notebook or Python script and start the analysis

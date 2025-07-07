@@ -1,0 +1,4 @@
+2025-07-02 18:29:46,793 - INFO - Ingesting begin_inventory.csv in db
+2025-07-02 18:30:16,880 - INFO - --------------Ingestion Complete---------------
+2025-07-02 18:30:16,881 - INFO - Total Time Taken: 0.5105975866317749 minutes
+2025-07-02 18:30:17,274 - INFO - Ingesting end_inventory.csv in db
